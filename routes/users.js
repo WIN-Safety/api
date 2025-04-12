@@ -10,7 +10,7 @@ import validator from '../middlewares/validator.js'
 
 const router = express.Router()
 
-router.post('/signup', accountExistsSignUp, validator(userSignUp), signUp)
+// router.post('/signup', accountExistsSignUp, validator(userSignUp), signUp)
 router.post('/signin', accountExistsSignIn, passwordIsOk, signIn)
 router.post('/signout', signOut)
 
