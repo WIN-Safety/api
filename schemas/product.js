@@ -17,26 +17,10 @@ export const productSchema = Joi.object({
         .min(3)
         .max(50)
         .required(),
-    codigo: Joi.string()
+    talla: Joi.string()
         .min(3)
         .max(50)
-        .required(),
-    altoempaque: Joi.string()
-        .min(1)
-        .max(1000)
-        .required(),
-    anchoempaque: Joi.string()
-        .min(1)
-        .max(1000)
-        .required(),
-    largoempaque: Joi.string()
-        .min(1)
-        .max(1000)
-        .required(),
-    peso: Joi.string()
-        .min(1)
-        .max(1000)
-        .required(),
+        .required(),   
     modelo: Joi.string()
         .min(1)
         .max(1000)
